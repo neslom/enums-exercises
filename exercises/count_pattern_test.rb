@@ -36,7 +36,7 @@ class CountPatternTest < Minitest::Test
     tally = 0
     words.each do |word|
       if word[-3, 3] == "ing"
-        tally +=1
+        tally += 1
       end
     end
     assert_equal 0, tally
@@ -55,7 +55,7 @@ class CountPatternTest < Minitest::Test
     numbers = [2, 5, 19, 25, 35, 67]
     tally = 0
     numbers.each do |num|
-      tally +=1 if num % 5 == 0
+      tally += 1 if num % 5 == 0
     end
     assert_equal 3, tally
   end
