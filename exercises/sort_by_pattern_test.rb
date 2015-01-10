@@ -2,7 +2,7 @@ gem 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
 
-class SortByPatternTest < Minitest::Test
+class SortByPatternTest < MiniTest::Test
 
   def test_sort_alphabetically
     words = ["broccoli", "Carrots", "FISH", "Bacon", "candy"]
